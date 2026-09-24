@@ -7,15 +7,108 @@
 
     <style></style>
 
-    <link rel="stylesheet" href="./more info/style.css" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- favicon -->
+
+    <link
+      rel="icon"
+      sizes="16x16"
+      href="../img/apple-touch-icon__1_-removebg-preview.png"
+    />
+    <link
+      rel="icon"
+      sizes="32x32"
+      href="../img/apple-touch-icon__1_-removebg-preview.png"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="../img/apple-touch-icon__1_-removebg-preview.png"
+    />
+    <link
+      rel="icon"
+      sizes="192x192"
+      href="../img/apple-touch-icon__1_-removebg-preview.png"
+    />
+    <link
+      rel="icon"
+      sizes="512x512"
+      href="../img/apple-touch-icon__1_-removebg-preview.png"
+    />
   </head>
-  
+
   <body>
-    <a href="./index.html">Home</a>
-    <a href="./more info/pomodoro.html">Pomodoro</a>
-    <a href="./more info/StudyTogether.html">Study Together</a>
-    <a href="./more info/SignIn.html">Sign in</a>
-  
-    <h1>Welcome to PORO</h1>
+    <header>
+      <div>
+        <h1 class="Head">Study together,</h1>
+        <h1 class="Head">grow together!</h1>
+      </div>
+    </header>
+
+    <h5 style="text-align: center; color: #2c1a17">
+      A focused space for those who study better knowing others are with them.
+    </h5>
+    <main>
+      <div id="card">
+        <div id="tab">
+          <button class="active">Pomodoro</button>
+          <button>To do</button>
+          <button>Study together</button>
+        </div>
+
+        <div id="pomodoro">
+          <div class="pomo_mode">
+            <button class="mode focus" onclick="ModeActive(this)">Focus</button>
+            <button class="mode" onclick="ModeActive(this)">Short Break</button>
+            <button class="mode" onclick="ModeActive(this)">Long Break</button>
+          </div>
+          <div id="clock_div">
+            <svg id="clock">
+              <!-- vong nen, mau hong nhat -->
+              <circle id="circle1" cx="50%" cy="50%" r="88"></circle>
+              <!-- vong tien do, mau do -->
+              <circle id="circle2" cx="50%" cy="50%" r="88"></circle>
+            </svg>
+
+            <div id="timer_inner">
+              <div id="timer_display">25:00</div>
+            </div>
+          </div>
+
+          <div id="pomo_control"></div>
+
+          <div id="sessions_dots">
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+            <div class="dot"></div>
+          </div>
+
+          <div id="pomo_fact">
+            "Pomodoro" means tomato in Italian — the technique was named after a
+            tomato-shaped kitchen timer!
+          </div>
+        </div>
+      </div>
+
+      <!-- pomodoro panel -->
+
+      <br />
+
+      <div class="songs">
+        <button id="song_1" onclick="Music()">Song 1</button>
+        <audio id="song_1_audio" src="./more info/Song1.mp3"></audio>
+      </div>
+    </main>
+
+    <h1><span>This is a span title</span></h1>
+
+    <script src="./main.js"></script>
   </body>
 </html>
+
+<!-- 
+transform
+transition
+
+-->

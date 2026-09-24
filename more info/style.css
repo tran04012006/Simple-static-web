@@ -12,3 +12,7 @@ body {
   text-align: left;
   font-family: Cursive, sans-serif, "Times New Roman", Times, serif;
 }
+
+.button_panel {
+  display: block;
+}
