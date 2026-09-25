@@ -1,0 +1,28 @@
+{
+  "name": "sarah",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "nodejs",
+    "react"
+  ],
+  "homepage": "https://github.com/tran04012006/Simple-static-web#readme",
+  "bugs": {
+    "url": "https://github.com/tran04012006/Simple-static-web/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tran04012006/Simple-static-web.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "express": "5.2.1"
+  }
+}
